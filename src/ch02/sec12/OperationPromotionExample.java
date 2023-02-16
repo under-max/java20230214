@@ -1,4 +1,4 @@
-package ch02.sec9;
+package ch02.sec12;
 
 public class OperationPromotionExample {
 	public static void main(String[] args) {
