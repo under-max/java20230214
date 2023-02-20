@@ -12,7 +12,7 @@ public class C12Replace {
 		
 		System.out.println(str1.replace("산", "mountain"));
 		System.out.println(str2);
-		str1.replace
+		
 		String str3 = str1.replace("설악", "지리");
 		System.out.println(str3);
 		str3.startsWith(str3);
