@@ -2,7 +2,7 @@ package ch04.example;
 
 
 
-public class Example04 {
+public class Example04DoWhile {
 	public static void main(String[] args) {
 		
 		
