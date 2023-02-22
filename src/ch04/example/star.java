@@ -27,15 +27,19 @@ public class star {
 			System.out.println();
 		}
 		
+		int[] num_list = {1,2,3,4,5};
+		int[] b = new int [num_list.length];
+		int x = num_list.length - 1 ;
 		
-		String[] strlist = {"dfg", "asd"};
-		int[] answer = new int[strlist.length];
-        for (int i = 0; i < strlist.length; i++){
-            answer[i] = strlist[i].length();
-        }
-        for (int le : answer) {
-        	System.out.println(le);
-        }
+		for(int i = x; 0 <= i; i--) {
+			b[i] = num_list[x-i];
+		}
+		
+		for(int d : b) {
+			System.out.println(d);
+		}
+		
+		
 	}
 }
 
