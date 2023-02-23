@@ -11,18 +11,19 @@ public class Example09 {
 		int studentSum  = 0;
 		int score = 0;
 		int scoresSum = 0;
+		int max = 0;
 		int[] arra = {};
 		Scanner scanner = new Scanner(System.in);
-		int main = 0;
+		
 		boolean run = true;
-		do {
+		while(run) {
 			
 			
 			System.out.println("-------------------------------------------------------------------");
 			System.out.println("1. 학생수 입력| 2.점수 입력 | 3. 점수 리스트 |4. 분석 | 5.종료");
 			System.out.println("-------------------------------------------------------------------");
 			
-			main = scanner.nextInt();
+			int main = scanner.nextInt();
 						
 			if(main == 1) {
 				System.out.print("학생수>");
@@ -43,10 +44,16 @@ public class Example09 {
 			}else if(main == 3) {
 				System.out.println("기록된 학생들의 점수리스트입니다.");
 				for(int i = 0; i < arra.length; i++) {
-					System.out.println(arra[i]);
+					System.out.println((i+1) + "번째 학생의 점수: " + arra[i]);
 				}
 			}else if(main == 4) {
 				System.out.println("학생들의 평균점수를 분석합니다");
+				for(int i = 0; i < arra.length; i++) {
+					if (max < arra[i]) {
+						max = arra[i];
+					}
+				}
+				System.out.println("최고 점수는 > " + max);
 				System.out.println("학생들의 평균 점수는> " + ((double)scoresSum / studentSum) + "입니다");
 			}else if(main == 5){
 				System.out.println("프로그램을 종료합니다");
@@ -55,7 +62,9 @@ public class Example09 {
 				System.out.println("잘못된 키 입력입니다 1~5 사이의 숫자를 입력해 주세요");
 			}
 			
-		}while(run);
+		}
+		
+		scanner.close();
 		
 	}
 }
