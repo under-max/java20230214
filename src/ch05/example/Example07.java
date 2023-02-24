@@ -20,5 +20,14 @@ public class Example07 {
 //		}
 		
 		System.out.println(max);
+		
+		max = 0;
+		
+		for(int sd : array) {
+			if(max < sd) {
+				max = sd;
+			}
+		}
+		System.out.println(max);
 	}
 }
