@@ -1,4 +1,4 @@
-package Java.generic;
+package Java.generic.copy;
 
 public class Generic {
 

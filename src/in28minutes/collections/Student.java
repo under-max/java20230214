@@ -1,4 +1,4 @@
-package collections;
+package in28minutes.collections;
 
 public class Student implements Comparable<Student>{
 

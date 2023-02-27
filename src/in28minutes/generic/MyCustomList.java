@@ -1,4 +1,4 @@
-package Java.generic;
+package in28minutes.generic;
 
 import java.util.ArrayList;
 

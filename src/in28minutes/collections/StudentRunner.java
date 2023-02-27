@@ -1,4 +1,4 @@
-package collections;
+package in28minutes.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;

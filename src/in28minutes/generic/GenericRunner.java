@@ -1,4 +1,4 @@
-package Java.generic;
+package in28minutes.generic;
 
 public class GenericRunner {
 	public static void main(String[] args) {
