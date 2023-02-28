@@ -16,5 +16,7 @@ public class C01Method {
 		o2.wakeUp();
 		o2.standUp();
 		o2.methodName(1);
+		
+	
 	}
 }

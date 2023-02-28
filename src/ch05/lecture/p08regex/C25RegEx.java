@@ -18,5 +18,8 @@ public class C25RegEx {
 		System.out.println("백두".matches(pattern3));
 		System.out.println("백두산".matches(pattern3));
 		System.out.println("산".matches(pattern3)); //1글자라 false
+		
+				
+        }
 	}
-}
+
