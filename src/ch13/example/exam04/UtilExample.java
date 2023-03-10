@@ -10,5 +10,10 @@ public class UtilExample {
 		Integer childAge = Util.getValue(childPair, "홍삼순");
 		System.out.println(childAge);
 		
+		/*OtherPair<String, Interger> otherPair = new OtherPair<>("홍삼원", 20);
+		//OhterPair는 Pair를 상속하지 않으므로 컴파일 에러 발생
+		int otherAge = Util.getValue(otherPair, "홍삼원")
+		 System.out.println(otherAge);
+		*/
 	}
 }
