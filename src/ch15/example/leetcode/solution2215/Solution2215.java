@@ -1,4 +1,4 @@
-package ch15.example.leetcode;
+package ch15.example.leetcode.solution2215;
 
 import java.util.*;
 
