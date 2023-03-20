@@ -1,10 +1,11 @@
 package Java.collectionsss;
 
 import java.util.*;
+import java.util.stream.*;
 
 public class ArrayListEx1 {
 	public static void main(String[] args) {
-		ArrayList list1 = new ArrayList();
+		ArrayList<Integer> list1 = new ArrayList();
 		
 		list1.add(new Integer(5));
 		list1.add(new Integer(1));
@@ -15,5 +16,18 @@ public class ArrayListEx1 {
 		
 		ArrayList list2 = new ArrayList(list1.subList(0, 3));
 		System.out.println(list2);
+		
+		Iterator<Integer> it = list1.iterator();
+		while(it.hasNext()) {
+			System.out.println(it.next());
+		}
+		
+		for(Integer a : list1) {
+			System.out.println(a);
+		}
+		
+		Stream<Integer> stream = list1.stream();
+		stream.forEach(System.out::println);
+		
 	}
 }
