@@ -32,18 +32,11 @@ public class Example {
 		developers.stream()
 		.forEach(d->System.out.println(d.getName()));
 				
-		
-		String a = "abcabcadc";
-		
-		
-//		for(String n : b) {
-//			System.out.println(n);
-//		}
-//		
 
-		Arrays.stream(a.split("")).map(e-> a.contains(e) ? "" : e).forEach(System.out::println);
-//		System.out.println();
-//		Arrays.stream(a.split("")).filter(e -> b.equals(e)).forEach(System.out::println);
-		
+//
+//		int[] array = {1, 2, 7, 10, 11};
+//		int[] answer = Arrays.stream(array).sorted().toArray();
+//		int a = answer[answer.length / 2];
+//		System.out.println(a);
 	}
 }

@@ -1,5 +1,6 @@
 package ch17.lecture.p02Terminal;
 
+import java.util.*;
 import java.util.stream.*;
 
 public class C01Terminal {
@@ -18,6 +19,17 @@ public class C01Terminal {
 		//reduce: 집계연산 
 		//collect: 다른 collection으로 변경 
 		
+		String s = "abdc";
+//		Map<String, Long> r2 = Arrays.stream(s.split("")).collect(Collectors.groupingBy(e->e, Collectors.counting()));
+		Arrays.stream(s.split(""))
+		.collect(Collectors.groupingBy(e->e, Collectors.counting()))
+		.entrySet()
+		.stream()
+		.filter(e->e.getValue() == 1)
+//    	.sorted((a,b) -> a.getKey().compareTo(b.getKey()))
+    	.map(e->e.getKey().toCharArray()).toList();
+//    	.forEach(System.out::println);
+			
 		
 		
 		
