@@ -3,6 +3,8 @@ package ch17.lecture.p02Terminal;
 import java.util.*;
 import java.util.stream.*;
 
+import javax.print.event.*;
+
 public class C01Terminal {
 	public static void main(String[] args) {
 		//count 원소의 수 
@@ -21,14 +23,22 @@ public class C01Terminal {
 		
 		String s = "abdc";
 //		Map<String, Long> r2 = Arrays.stream(s.split("")).collect(Collectors.groupingBy(e->e, Collectors.counting()));
-		Arrays.stream(s.split(""))
+		Object c = Arrays.stream(s.split(""))
 		.collect(Collectors.groupingBy(e->e, Collectors.counting()))
 		.entrySet()
 		.stream()
 		.filter(e->e.getValue() == 1)
 //    	.sorted((a,b) -> a.getKey().compareTo(b.getKey()))
-    	.map(e->e.getKey().toCharArray()).toList();
-//    	.forEach(System.out::println);
+    	.map(e->e.getKey().toCharArray());
+		
+		
+//				Arrays.stream(s.split(""))
+//		.collect(Collectors.groupingBy(e->e, Collectors.counting()))
+//		.entrySet()
+//		.stream()
+//		.filter(e->e.getValue() == 1)
+////    	.sorted((a,b) -> a.getKey().compareTo(b.getKey()))
+//    	.map(e->e.getKey().toCharArray());
 			
 		
 		
