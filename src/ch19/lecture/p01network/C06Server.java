@@ -1,4 +1,4 @@
-package ch19.lecture.pC01network;
+package ch19.lecture.p01network;
 
 import java.io.*;
 import java.net.*;
